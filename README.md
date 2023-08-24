@@ -1,2 +1,2 @@
-# Hindi-Text-Summerizer
+# Hindi-Text-Summarizer
 NLP Project.
