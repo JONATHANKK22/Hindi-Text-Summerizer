@@ -1,5 +1,5 @@
 # Hindi-Text-Summarizer
-NLP Project.
+***NLP Project.***
 
 
 # Final Year Project Ideas
@@ -71,4 +71,36 @@ for inputs, targets in dataset:
 ---
 
 ## Installation
+
+**Algorithm**
+
+Term Frequency * Inverse Document Frequency
+
+This is a technique to quantify words in a set of documents. We generally compute a score for each word to signify its importance in the document and corpus. This method is a widely used technique in Information Retrieval and Text Mining.
+
+A High weight in **TF-IDF** is reached by a high term frequency(in the given document) and a low document frequency of the term in the whole collection of documents.
+
+It is easier for any programming language to understand textual data in the form of numerical value. So, for this reason, we vectorize all of the text so that it is better represented.
+
+TF-IDF algorithm is made of 2 algorithms multiplied together.
+
+Term Frequency
+**Term frequency (TF)** is This measures the frequency of a word in a document. divided by how many words there are.
+
+**TF(t) = (Number of times term t appears in a document) / (Total number of terms in the document)**
+
+Inverse document frequency
+Term frequency is how common a word is, inverse document frequency (IDF) is how unique or rare a word is.
+
+**IDF(t) = log_e(Total number of documents / Number of documents with term t in it)**
+
+For Example,
+Consider a document containing 100 words wherein the word apple appears 5 times. The term frequency (i.e., TF) for apple is then (5 / 100) = 0.05.
+
+Now, assume we have 10 million documents and the word apple appears in one thousand of these. Then, the inverse document frequency (i.e., IDF) is calculated as log(10,000,000 / 1,000) = 4.
+
+Thus, the TF-IDF weight is the product of these quantities: 0.05 * 4 = 0.20.
+**TF-IDF = TF(t) * IDF(t)**
+
+
 
